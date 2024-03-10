@@ -1,0 +1,45 @@
+{
+  "MaxCount": 1,
+  "MinCount": 1,
+  "ImageId": "ami-053b0d53c279acc90",
+  "InstanceType": "t2.micro",
+  "EbsOptimized": false,
+  "UserData": "IS9iaW4vYmFzaAp5dW0gaW5zdGFsbCBodHRwZCAteQpzeXN0ZW1jdGwgc3RhcnQgaHR0cGQ=",
+  "BlockDeviceMappings": [
+    {
+      "DeviceName": "/dev/sda1",
+      "Ebs": {
+        "Encrypted": false,
+        "DeleteOnTermination": true,
+        "SnapshotId": "snap-0d3283808e9f92122",
+        "VolumeSize": 8,
+        "VolumeType": "gp2"
+      }
+    }
+  ],
+  "NetworkInterfaces": [
+    {
+      "AssociatePublicIpAddress": true,
+      "DeviceIndex": 0,
+      "Groups": [
+        "sg-0c53ebfdd69165579"
+      ]
+    }
+  ],
+  "TagSpecifications": [
+    {
+      "ResourceType": "instance",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "JaspalApacheServer"
+        }
+      ]
+    }
+  ],
+  "PrivateDnsNameOptions": {
+    "HostnameType": "ip-name",
+    "EnableResourceNameDnsARecord": true,
+    "EnableResourceNameDnsAAAARecord": false
+  }
+}
